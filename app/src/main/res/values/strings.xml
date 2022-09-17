@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Hobnob</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="no_account">Do not have an account? <b>Sign Up</b></string>
+    <string name="yes_account">Already have an account? <b>Login</b></string>
+    <string name="reset_password">Reset Password</string>
+    <string name="go_back_to_login">Go back to <b>Login</b></string>
+    <string name="please_check_mail">Please check your mails for password reset link</string>
+    <string name="confirmation_sent">Confirmation Sent</string>
+    <string name="who_are_you"><b>Who are you?</b></string>
+    <string name="go_to_dashboard">Go to %s Dashboard</string>
+    <string name="teacher">Teacher</string>
+    <string name="student">Student</string>
+    <string name="sign_up">Sign up</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="name">Name</string>
+    <string name="hello">Hello</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="verify">Verify</string>
+    <string name="enter_otp_message">Enter the OTP that was sent on your email address.</string>
+    <string name="verify_your_account">Verify your account</string>
+    <string name="you_can_change_this_later_in_settings">You can change this later in settings</string>
+    <string name="or">OR</string>
+    <string name="sign_in_with_google">Sign in with <b>Google</b></string>
+    <string name="s_said">%s said:</string>
+</resources>

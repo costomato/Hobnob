@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_gradient_primary"
+    tools:context=".view.login.LoginSignupAboutFragment">
+
+    <TextView
+        android:id="@+id/tvWhoAreYou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/who_are_you"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/btnStudent"
+        app:layout_constraintEnd_toEndOf="@id/marginEnd"
+        app:layout_constraintStart_toStartOf="@id/marginStart"
+        app:layout_constraintTop_toTopOf="@id/marginTop"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStudent"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_btn_border"
+        android:backgroundTint="@color/btnBgBlue"
+        android:text="@string/student"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/btnTeacher"
+        app:layout_constraintEnd_toEndOf="@id/marginEnd"
+        app:layout_constraintStart_toStartOf="@id/marginStart"
+        app:layout_constraintTop_toBottomOf="@id/tvWhoAreYou" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTeacher"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/bg_btn_border"
+        android:text="@string/teacher"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/btnOpenDashboard"
+        app:layout_constraintEnd_toEndOf="@id/marginEnd"
+        app:layout_constraintStart_toStartOf="@id/marginStart"
+        app:layout_constraintTop_toBottomOf="@id/btnStudent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOpenDashboard"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/bg_btn_border"
+        android:backgroundTint="@color/btnBgGreen"
+        android:text="@string/go_to_dashboard"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/tvInfo"
+        app:layout_constraintEnd_toEndOf="@id/marginEnd"
+        app:layout_constraintStart_toStartOf="@id/marginStart"
+        app:layout_constraintTop_toBottomOf="@id/btnTeacher" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/you_can_change_this_later_in_settings"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/marginEnd"
+        app:layout_constraintTop_toBottomOf="@id/btnOpenDashboard"
+        app:layout_constraintBottom_toBottomOf="@id/marginBottom"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/marginStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/marginEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/marginTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/marginBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".97" />
+</androidx.constraintlayout.widget.ConstraintLayout>

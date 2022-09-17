@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bgPrimary">#171717</color>
+    <color name="bgSecondary">#2F2F2F</color>
+    <color name="textPrimary">#FFFFFF</color>
+    <color name="textSecondary">#FFFFFF</color>
+    <color name="gradientStart">#1CE7A6</color>
+    <color name="gradientEnd">#15B1EA</color>
+    <color name="bgPaid">#00B93F</color>
+    <color name="bgFree">#CBCBCB</color>
+    <color name="bgLabel">#4DC4C4C4</color>
+    <color name="bgPurchase">#2D29FB</color>
+
+    <color name="secondaryGradientStart">#021C1C</color>
+    <color name="secondaryGradientEnd">#021C1C</color>
+
+    <color name="bgMessageBox">#3A072E</color>
+
+    <color name="bgMessageSent">#7B0660</color>
+    <color name="bgMessageReceived">#29292C</color>
+
+</resources>

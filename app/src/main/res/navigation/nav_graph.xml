@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginPrimaryFragment">
+
+    <fragment
+        android:id="@+id/loginPrimaryFragment"
+        android:name="com.project.hobnob.view.login.LoginPrimaryFragment"
+        android:label="fragment_login_primary"
+        tools:layout="@layout/fragment_login_primary">
+        <action
+            android:id="@+id/action_loginPrimaryFragment_to_loginResetPassFragment"
+            app:destination="@id/loginResetPassFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_loginPrimaryFragment_to_loginSignupFragment"
+            app:destination="@id/loginSignupFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_loginPrimaryFragment_to_loginVerificationFragment"
+            app:destination="@id/loginVerificationFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginResetPassFragment"
+        android:name="com.project.hobnob.view.login.LoginResetPassFragment"
+        android:label="fragment_login_reset_pass"
+        tools:layout="@layout/fragment_login_reset_pass" />
+    <fragment
+        android:id="@+id/loginSignupFragment"
+        android:name="com.project.hobnob.view.login.LoginSignupFragment"
+        android:label="fragment_login_signup"
+        tools:layout="@layout/fragment_login_signup">
+        <action
+            android:id="@+id/action_loginSignupFragment_to_loginVerificationFragment"
+            app:destination="@id/loginVerificationFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginSignupAboutFragment"
+        android:name="com.project.hobnob.view.login.LoginSignupAboutFragment"
+        android:label="fragment_login_signup_about"
+        tools:layout="@layout/fragment_login_signup_about" />
+    <fragment
+        android:id="@+id/loginVerificationFragment"
+        android:name="com.project.hobnob.view.login.LoginVerificationFragment"
+        android:label="LoginVerificationFragment">
+        <action
+            android:id="@+id/action_loginVerificationFragment_to_loginSignupAboutFragment"
+            app:destination="@id/loginSignupAboutFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_loginVerificationFragment_to_loginPrimaryFragment"
+            app:destination="@id/loginPrimaryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+</navigation>

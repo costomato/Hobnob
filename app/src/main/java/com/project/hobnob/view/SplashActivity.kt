@@ -3,16 +3,11 @@ package com.project.hobnob.view
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.graphics.*
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.appcompat.content.res.AppCompatResources
-import androidx.core.content.ContextCompat
-import com.project.hobnob.R
 import com.project.hobnob.databinding.ActivitySplashBinding
 import com.project.hobnob.utils.Constants
 import com.project.hobnob.view.login.LoginActivity
@@ -46,7 +41,3 @@ class SplashActivity : AppCompatActivity() {
         }, 400)
     }
 }
-
-/*
-node /WebDevProjects/bookverse-web/bookverse-backend/index.js
-*/
